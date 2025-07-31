@@ -1,0 +1,119 @@
+
+    header {
+    padding: 1.0em;
+    background-color: #f48fb1;
+    color: white;
+    }
+    
+    .albumtitle {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5em;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 20px;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #fff0f5;
+      padding: 30px;
+    }
+
+    body.modal-open{
+      overflow: hidden;        
+    }
+
+    .timeline {
+      border-left: 4px solid #f48fb1;
+      padding-left: 20px;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .album-month {
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .album-month::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background: #f48fb1;
+      border-radius: 50%;
+    }
+    .album-month img {
+      max-width: 70%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .date {
+      font-weight: bold;
+      color: #d81b60;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .timeline-image{
+        margin-bottom: 10%;
+    }
+
+    .top-text {
+        margin-top: 5%;
+    }
+
+    /* モーダル装飾 */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        overflow: auto;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 90%;
+        height: 90%;
+        background-color: #fff;
+        border-radius: 8px;
+        justify-content: center;
+        text-align: center;
+        overflow-y: auto;
+        padding-bottom: 30px;
+    }
+
+    .modal-img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        justify-content: center;
+        margin-bottom: 10%;
+        max-width: 90%;
+    }
+
+    .modal-img img {
+        border-radius: 8pt;
+        max-width: 45%;
+        padding-bottom: 3%;
+    }
+
+    .secret {
+        padding-top: 100%;
+    }
+
+    .close {
+        position: absolute;
+        right: 7.5%;
+        font-size: 3em;
+        cursor: pointer;
+    }

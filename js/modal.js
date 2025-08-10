@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const modalId = img.dataset.modal;
             const modal = document.getElementById(modalId);
             if (modal) modal.style.display = "flex";
+            const btn = document.querySelector(".back-to-top");
             document.body.classList.add("modal-open"); // モーダルオープン時にスクロールを無効化
+            btn.style.display = "none";
         });
     });
 

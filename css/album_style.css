@@ -13,6 +13,49 @@
       margin-top: 20px;
     }
 
+    .year-toggle {
+      display: block;             /* ボタンをブロック要素に */
+      margin: 0 auto 10px auto;   /* 中央寄せ＋下に少し余白 */
+      padding: 10px 20px;
+      background-color: #f48fb1;
+      color: white;
+      font-size: 32px;
+      border: 3px solid #d81b60; /* 枠線 */
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+
+    .month-row {
+      display: grid;
+      font-size: 32px; /* ボタンのフォントサイズ */
+      grid-template-columns: repeat(6, 1fr); /* 1行に6列 */
+      gap: 10px;                             /* 各ボタンの間隔 */
+      width: 100%;
+      max-width: 600px;                      /* 表全体の最大幅（中央寄せ用） */
+      margin: 20px auto;
+    }
+
+    .month-row a{
+      display: inline-block;
+      width: 80px; /* ボタンの幅 */
+      padding: 10px 0;
+      background-color: #f48fb1; /* 背景色 */
+      color: white; /* 文字色 */
+      text-align: center;
+      text-decoration: none;
+      border-radius: 8px; /* 角丸 */
+      font-size: 18px;
+      border: 2px solid #d81b60; /* 枠線 */
+      transition: 0.3s;
+    }
+
+    .month-row a:hover{
+     background-color: #d81b60;
+     border-color: #880e4f;
+    }
+
     body {
       font-family: sans-serif;
       background: #fff0f5;
@@ -29,6 +72,12 @@
       margin: 0 auto;
       max-width: 600px;
     }
+
+    .timeline-image {
+      width: 240px;
+      width: 320px;
+    }
+
     .album-month {
       margin-bottom: 40px;
       position: relative;
@@ -112,9 +161,38 @@
         padding-top: 100%;
     }
 
+    .birthday {
+        padding-top: 0%;
+    }
+
+    .surprise {
+        display: block;
+    }
+
     .close {
         position: absolute;
         right: 7.5%;
         font-size: 3em;
         cursor: pointer;
     }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;  /* 下から20px */
+        right: 20px;   /* 右から20px */
+        background-color: #f48fb1;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 14px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        opacity: 0.8;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .back-to-top:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
